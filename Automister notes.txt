@@ -1,0 +1,47 @@
+Auto-mister project
+
+#Install Pip & Virtualenv
+##http://exponential.io/blog/2015/02/10/install-virtualenv-and-virtualenvwrapper-on-ubuntu/
+
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install virtualenv virtualenvwrapper
+
+sudo pip install --upgrade pip
+
+Setup virtualenvwrapper in ~/.bashrc.
+
+# Create a backup of your .bashrc file
+cp ~/.bashrc ~/.bashrc-org
+
+# Be careful with this command
+printf '\n%s\n%s\n%s' '# virtualenv' 'export WORKON_HOME=~/virtualenvs' \
+'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc
+Enable the virtual environment.
+
+source ~/.bashrc
+
+mkdir -p $WORKON_HOME
+
+mkvirtualenv api
+
+# Exit the 'api' virtual environment
+deactivate
+
+## Flask Notes-
+export FLASK_APP=hello.py
+$ flask run
+ * Running on http://127.0.0.1:5000/
+flask run --host=0.0.0.0 allows the server to be accessed outside the host Computer
+
+export FLASK_APP=app.py //
+
+
+
+## Dependencies
+pip install RPi.GPIO
+
+
+
+##Links
+https://learn.adafruit.com/raspberry-pi-e-mail-notifier-using-leds
+https://stackoverflow.com/questions/36730812/getting-an-internal-server-error-on-flask-web-server
