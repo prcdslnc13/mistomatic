@@ -1,4 +1,18 @@
 Auto-mister project
+## Pi Pinout
+http://www.jameco.com/Jameco/workshop/circuitnotes/raspberry-pi-circuit-note.html
+## Sensor tutorials
+
+##DHT22 temp/humidity
+https://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging/overview
+## DS18B20
+https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing/overview
+https://github.com/timofurrer/w1thermsensor
+
+## Relay
+
+##
+
 
 #Install Pip & Virtualenv
 ##http://exponential.io/blog/2015/02/10/install-virtualenv-and-virtualenvwrapper-on-ubuntu/
@@ -28,6 +42,9 @@ mkvirtualenv api
 deactivate
 
 ## Flask Notes-
+
+sudo pip install flask
+
 export FLASK_APP=hello.py
 $ flask run
  * Running on http://127.0.0.1:5000/
